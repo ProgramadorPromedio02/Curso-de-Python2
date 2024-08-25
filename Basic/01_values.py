@@ -1,5 +1,4 @@
-# Variables
-
+### Variables ###
 
 # Int
 my_int_var = 5
@@ -131,3 +130,10 @@ name = 35
 age = "Brais"
 print(name)
 print(age)
+
+# ¿Forza tipos(no recomendable)?
+# address: str = "Mi dirección"
+# address = True
+# address = 5
+# address = 1.2
+# print(type(address))

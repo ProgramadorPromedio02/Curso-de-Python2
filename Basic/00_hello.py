@@ -1,3 +1,5 @@
+### Hello World! ###
+
 # Esto es un comentario:
 # Nuestro hola mundo en Python
 # print(): Imprime un mensaje en consola.
@@ -23,6 +25,7 @@ print(type([1, 2, 3])) # Tipo 'list'
 print(type((1, 2, 3))) # Tipo 'tuple'
 print(type({'name': 'Asabeneh'})) # Tipo 'diccionary'
 print(type({9.8, 3.14, 5.66})) # Tipo 'set'
+print(type(print("Mi cadena de texto"))) # Tipo 'NoneType'
 
 # Comentarios finales
 print(f"Comentarios Finales:\n Estoy disfrutando de aprender de programación y desde siempre quise aprenderlo, pero me tuve que ver obligado a aprender JavaScript, React, Bootstrap, Node.js, Express, Morgan, entre otras tecnologías para aprobar Laboratorio III.")
