@@ -103,3 +103,25 @@ def sum_two_values(val1, val2):
   return val1 + val2
 
 print(reduce(sum_two_values, nums)) # 2 + 5 + 10 + 21 + 3 + 30 = 71
+
+words = ["Hello", "world", "this", "is", "Python"]
+
+# Función para concatenar dos cadenas
+def concatenate_strings(x, y):
+    return x + " " + y
+
+# Usar reduce para concatenar todas las palabras en la lista
+sentence = reduce(concatenate_strings, words)
+print(sentence)  # "Hello world this is Python"
+sentence = reduce(lambda x, y: x + " " + y, words)
+print(sentence)  # "Hello world this is Python"
+
+words = ["apple", "banana", "cherry", "date"]
+
+# Función para concatenar cadenas con comas entre palabras
+def concatenate_with_commas(x, y):
+    return x + ", " + y
+
+# Usar reduce para crear una lista de palabras separadas por comas
+sentence_with_commas = reduce(concatenate_with_commas, words)
+print(sentence_with_commas)  # "apple, banana, cherry, date"
