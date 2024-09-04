@@ -107,3 +107,38 @@ print(person_json)
 # import os
 # os.remove('./files/06_my_file.txt')
 # os.remove('./files/06_my_file.json')
+
+### 9. Extra: Manejo de otros ficheros 
+
+# .csv file
+
+import csv
+
+csv_file = open('./files/06_my_file.csv', 'w+')
+
+# csv_test = {
+#   'name': 'Brais',
+#   'surname': 'Moure',
+#   'age': 35,
+#   'language': 'Python',
+#   'website': 'https://moure.dev'
+# }
+
+csv_writer = csv.writer(csv_file)
+csv_writer.writerow(['name', 'surname', 'age', 'language', 'website'])
+csv_writer.writerow(['Brais', 'Moure', 35, 'Python', 'https://moure.dev'])
+csv_writer.writerow(['Roswell', '', 2, 'COBOL', ''])
+
+csv_file.close()
+
+with open('./files/06_my_file.csv') as my_csv:
+  for line in my_csv.readlines():
+    print(line)
+
+# .xlsx file
+
+# import xlrd # Debe instalarse el módulo: pip install xlrd
+
+# .xml file
+
+# import xml
